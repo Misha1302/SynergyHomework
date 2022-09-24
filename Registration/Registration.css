@@ -1,9 +1,3 @@
-hr {
-    border: 0.1pc solid #000000; /* ширина бордера теперь - 0.1 пика */
-    margin-bottom: 0.5pc; /* отступ от бордера в 0.5 */
-}
-
-
 .RegisterButton { /* кнопка в обычном состоянии */
     background-color: #50f054; /* задний цвет - салатовый */
     color: white; /* цвет текста - белый */
@@ -30,7 +24,7 @@ hr {
     -webkit-transition: all .1s linear; /* добавляем немного плавности размером в 0.3 секунды */
 }
 
-input {
+input { /* вводное окошко */
     border: 0.1pc solid #000000; /* ширина бордера теперь - 0.1 пика */
     border-radius: 3px; /* делаем скругленные края */
     font: 1em "Fira Sans", sans-serif; /* назначаем стиль текста */
@@ -41,11 +35,11 @@ td > label { /* label, находящийся в td */
     font: 1.3em "Fira Sans", sans-serif; /* назначаем стиль текста */
 }
 
-td {
+td { /* элемент в таблице */
     border: 2px solid #333333; /* назначаем border. цвет - черный */
 }
 
-table {
+table { /* таблица */
     border: 0.2pc solid #000000; /* назначаем границу */
     width: 100%; /* ширина во весь экран */
     background: Khaki; /* желтый */
