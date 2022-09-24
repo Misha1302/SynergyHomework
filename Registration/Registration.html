@@ -6,24 +6,33 @@
     <link rel="stylesheet" href="Registration.css">
 </head>
 <body>
-<label>
-    <b>Email</b><br>
-    <input type="email" id="email" pattern=".+@globex\.com" placeholder="Enter Email" size="30" required>
-</label>
-<hr>
+<table>
+    <caption>Registration</caption>
 
-<label>
-    <b>Password</b><br>
-    <input type="password" id="regPassword0" placeholder="Enter password" size="30" required>
-</label>
-<hr>
+    <td>
+        <label>
+            <b>Email</b><br>
+            <input type="email" id="email" pattern=".+@globex\.com" placeholder="Enter Email" size="30" required>
+        </label>
+        <hr>
+    </td>
 
-<label>
-    <b>Confirm password</b><br>
-    <input type="password" id="regPassword1" placeholder="Enter password" size="30" required>
-</label>
-<hr>
+    <td>
+        <label>
+            <b>Password</b><br>
+            <input type="password" id="regPassword0" placeholder="Enter password" minlength="6" size="30" required>
+        </label>
+        <hr>
+    </td>
 
+    <td>
+        <label>
+            <b>Confirm password</b><br>
+            <input type="password" id="regPassword1" placeholder="Enter password" minlength="6" size="30" required>
+        </label>
+        <hr>
+    </td>
+</table>
 <button type="submit" class="RegisterButton">Register</button>
 </body>
 </html>
