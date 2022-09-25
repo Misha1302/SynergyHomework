@@ -3,33 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Registration</title>
-    <link rel="stylesheet" href="Registration.css">
+    <link href="../Main/Main.css" rel="stylesheet">
+    <script src="../Main/Main.js"></script>
 </head>
 <body>
-<table>
-    <caption>Registration</caption>
 
-    <td>
-        <label>
-            <b>Email</b><br>
-            <input type="email" id="email" pattern=".+@globex\.com" placeholder="Enter Email" size="30" required>
-        </label>
-    </td>
+<div class="Additional">
+    <button class="Button1" onclick="goToRegistration();">Register</button>
+    <button class="Button1" onclick="goToLogin();">Login</button>
+</div>
 
-    <td>
-        <label>
-            <b>Password</b><br>
-            <input type="password" id="regPassword0" placeholder="Enter password" minlength="6" size="30" required>
-        </label>
-    </td>
+<div class="Main1">
+    <table>
+        <td colspan="3">
+            <label class="TableTitle">Registration</label>
+        </td>
+        <tr>
+            <td>
+                <label>
+                    <b>Email</b><br>
+                    <input id="emailInput" pattern=".+@globex\.com" placeholder="Enter email" required size="30"
+                           type="email">
+                </label>
+            </td>
 
-    <td>
-        <label>
-            <b>Confirm password</b><br>
-            <input type="password" id="regPassword1" placeholder="Enter password" minlength="6" size="30" required>
-        </label>
-    </td>
-</table>
-<button type="submit" class="RegisterButton">Register</button>
+            <td>
+                <label>
+                    <b>Password</b><br>
+                    <input id="passwordInput" minlength="6" placeholder="Enter password" required size="30"
+                           type="password">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>
+                    <b>Firstname</b><br>
+                    <input id="firstnameInput" placeholder="Enter your first name" required size="30" type="text">
+                </label>
+            </td>
+            <td>
+                <label>
+                    <b>Surname</b><br>
+                    <input id="surnameInput" placeholder="Enter your surname" required size="30" type="text">
+                </label>
+            </td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>
+
+<!--
+
+
+<td>
+    <label>
+        <b>Birthday</b><br>
+        <input id="birthdayInput" placeholder="Enter birthday" required size="30" type="date">
+    </label>
+</td>
+
+--->

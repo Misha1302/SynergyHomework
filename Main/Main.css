@@ -1,0 +1,96 @@
+.Button1 { /* кнопка в обычном состоянии */
+    background-color: #50f054; /* задний цвет - салатовый */
+    color: white; /* цвет текста - белый */
+    padding: 1.3%; /* отступ (или высота) кноки - 1% */
+    border: none; /* удаляем ужасную рамку */
+    cursor: pointer; /* при наведении на кнопку - меняем курсор */
+    margin: 10px 25% 10px 25%;
+    width: 50%;
+    opacity: 90%; /* видимость - 90% */
+    font: 2em "Fira Sans", sans-serif; /* назначаем стиль текста */
+    border-radius: 15px; /* делаем скругленные края */
+    -webkit-transition: all .3s linear; /* добавляем немного плавности размером в 0.3 секунды */
+}
+
+.Button1:hover { /* кнопка при наведении мышкой */
+    color: white; /* цвет текста - белый */
+    background: #4fd853; /* задний цвет - зеленый */
+    -webkit-transition: all .3s linear; /* добавляем немного плавности размером в 0.3 секунды */
+}
+
+.Button1:active { /* кнопка при клике */
+    background: #4ec852; /* задний цвет - зеленый */
+    font: 1.95em "Fira Sans", sans-serif; /* изменяем стиль текста */
+    -webkit-transition: all .1s linear; /* добавляем немного плавности размером в 0.3 секунды */
+}
+
+input { /* вводное окошко */
+    border: 0.1pc solid #000000; /* ширина бордера теперь - 0.1 пика */
+    border-radius: 3px; /* делаем скругленные края */
+    font: 1em "Fira Sans", sans-serif; /* назначаем стиль текста */
+    height: 1.5em; /* высота в полтора длины шрифта */
+}
+
+td > label { /* label, находящийся в td */
+    font: 1.3em "Fira Sans", sans-serif; /* назначаем стиль текста */
+}
+
+label.TableTitle { /* label, находящийся в td */
+    font: 2em "Fira Sans", sans-serif; /* назначаем стиль текста */
+    display: block; /* фиг знает почему, но без этого не работает text-align */
+    text-align: center; /* назначаем позицию середины текста по середине блока */
+}
+
+td { /* элемент в таблице */
+    border: 2px solid #333333; /* назначаем border. цвет - черный */
+    text-align: center; /* назначаем позицию середины текста по середине блока */
+}
+
+table { /* таблица */
+    border: 0.2pc solid #000000; /* назначаем границу */
+    width: 80%; /* ширина во весь экран */
+    background: Khaki; /* желтый */
+    border-radius: 5px;
+
+    margin: 5% 5% 5% 4%;
+    height: 50%;
+}
+
+table > caption { /* caption, находящийся в table */
+    font: 2.4em "Fira Sans", sans-serif; /* назначаем стиль текста */
+    margin-bottom: 10px; /* отступ от таблицы - 10 пикселей */
+}
+
+body { /* body из html */
+    background: #000000 url("../src/Images/background.jpg") fixed; /* назначаем задний фон, говорим, что никаких фильтров не надо (#000000 - белый цвет) и фиксируем */
+}
+
+div.Main {
+    display: block;
+    width: 800px;
+    position: center;
+    margin: 1% auto;
+    background: #fff5d7;
+    border-radius: 30px;
+}
+
+div.Additional {
+    position: fixed;
+    background: #fff5d7;
+    border-radius: 30px;
+
+    margin: 0% 79%;
+    width: 20%;
+    height: 13.5%;
+}
+
+div.Main1 {
+    display: inline-block;
+    top: auto;
+    background: #fff5d7;
+    border-radius: 30px;
+
+    margin: 25% 25% 25% 25%;
+    width: 50%;
+    height: 50%;
+}
