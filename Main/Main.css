@@ -65,28 +65,20 @@ body { /* body из html */
     background: #000000 url("../src/Images/background.jpg") fixed; /* назначаем задний фон, говорим, что никаких фильтров не надо (#000000 - белый цвет) и фиксируем */
 }
 
-div.Main {
-    display: block;
-    width: 800px;
-    position: center;
-    margin: 1% auto;
-    background: #fff5d7;
-    border-radius: 30px;
-}
-
 div.Additional {
     position: fixed;
+    float: right;
     background: #fff5d7;
     border-radius: 30px;
 
-    margin: 0% 79%;
+    margin: 0 79%;
     width: 20%;
     height: 13.5%;
 }
 
 div.Main1 {
     display: inline-block;
-    top: auto;
+    float: inherit;
     background: #fff5d7;
     border-radius: 30px;
 

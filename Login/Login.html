@@ -1,35 +1,44 @@
-<!--- ЕЩЕ НЕ ИСПОЛЬЗУЕТСЯ --->
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Registration</title>
     <link href="../Main/Main.css" rel="stylesheet">
+    <script src="../Main/Main.js"></script>
 </head>
 <body>
 
-<table>
-    <td colspan="3">
-        <label class="TableTitle">Registration</label>
-    </td>
-    <tr>
-        <td>
-            <label>
-                <b>Email</b><br>
-                <input id="emailInput" pattern=".+@globex\.com" placeholder="Enter Email" required size="30" type="email">
-            </label>
-        </td>
+<div class="Additional">
+    <button class="Button1" onclick="goToRegistration('../');">Register</button>
+    <button class="Button1" onclick="goToLogin('../');">Login</button>
+</div>
 
-        <td>
-            <label>
-                <b>Password</b><br>
-                <input id="passwordInput" minlength="6" placeholder="Enter password" required size="30" type="password">
-            </label>
+<div class="Main1">
+    <table>
+        <td colspan="3">
+            <label class="TableTitle">Login</label>
         </td>
-    </tr>
-</table>
-<button id="registerButton" class="Button1">Register</button>
-<button id="loginButton" class="Button1">Login</button>
+        <tr>
+            <td>
+                <label>
+                    <b>Email</b><br>
+                    <input id="emailInput" pattern=".+@globex\.com" placeholder="Enter email" required size="30"
+                           type="email">
+                </label>
+            </td>
+
+            <td>
+                <label>
+                    <b>Password</b><br>
+                    <input id="passwordInput" minlength="6" placeholder="Enter password" required size="30"
+                           type="password">
+                </label>
+            </td>
+        </tr>
+    </table>
+
+
+    <button class="Button1" onclick="login();">Login</button>
+</div>
 </body>
 </html>
